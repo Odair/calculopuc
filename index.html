@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculo2</title>
+        
+    <meta charset="iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />  
+    <link rel="stylesheet" href="css/dx.light.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 
+        Other available themes:
+        <link rel="stylesheet" href="css/dx.light.compact.css" />
+        <link rel="stylesheet" href="css/dx.contrast.css" />
+        <link rel="stylesheet" href="css/dx.contrast.compact.css" />
+        <link rel="stylesheet" href="css/dx.dark.css" />
+        <link rel="stylesheet" href="css/dx.dark.compact.css" />
+    -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" src="js/globalize.min.js"></script>
+
+    <script type="text/javascript" src="js/dx.all.js"></script>
+    <!--
+    <script type="text/javascript" src="js/dx.all.debug.js"></script>
+    -->
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <!-- Layouts -->
+    <link rel="stylesheet" type="text/css" href="layouts/Desktop/DesktopLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Desktop/DesktopLayout.html"/>    
+    <script type="text/javascript" src="layouts/Desktop/DesktopLayout.js"></script>
+
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>
+                        CÁLCULO 2
+                    </h2>
+                  <!--col-->
+                
+                </div><!--row-->
+            </div>
+            </div> <!--container-->
+
+    </section>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              
+                <a class="navbar-brand" href="#">Programação Linear</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+               
+                <div class="panel-body">
+                    R(x,y) = 0,4x + 0,7y + 400
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading" >
+                    Restrições
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-6">
+                        3x + 6y <= 9000 x6 </br></br>
+                        8400x + 2800y <= 5.040.000 </br></br>
+                        x >= 0 </br></br>
+                        y >= 0 </br></br>
+                    </div>
+                    <div class="col-sm-6">
+                        <div style="margin-top:50px"><h2>Desigualdade Linear</h2></div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="panel panel-primary">
+
+                <div class="panel-body">
+                    <div class="col-sm-6">
+                        <div id="chart"></div>
+                        <center>
+                            <div id="types"></div>
+                        </center>
+                    </div>
+                    <div class="col-sm-6">
+                        
+                        <div style="margin-top:40px" id="eq1" class="panel panel-primary">
+                            <div class="panel-heading">
+                                Equação restrição 1
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        8400x + 2800y = 5.040.000
+                                    </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+
+                                        </br></br>
+                                        Para x = 0
+                                        </br></br>
+                                        2800y = 5.040.000
+                                        </br></br>
+                                        y = 1800
+                                    </div>
+                                    <div class="col-sm-6">
+                                        </br></br>
+                                        Para y = 0
+                                        </br></br>
+                                        8400x = 5.040.000
+                                        </br></br>
+                                        x = 600
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="botao2" type="button" class="btn btn-success btn-lg btn-block">Continuar</button>
+                            </div>
+                        <div style="margin-top:40px" id="eq2" class="panel panel-primary">
+                            <div class="panel-heading">
+                                Equação restrição 2
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        3x + 6y = 9000
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+
+                                        </br></br>
+                                        Para x = 0
+                                        </br></br>
+                                        6y = 9000
+                                        </br></br>
+                                        y = 1500
+                                    </div>
+                                    <div class="col-sm-6">
+                                        </br></br>
+                                        Para y = 0
+                                        </br></br>
+                                        3x = 9000
+                                        </br></br>
+                                        x = 3000
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="botao3" type="button" class="btn btn-success btn-lg btn-block">Continuar</button>
+                        </div>
+
+                        <div style="margin-top:40px" id="eq3" class="panel panel-primary">
+                            <div class="panel-heading">
+                                Vertice da região viável
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p>Cada ponto (x,y) desta região atende a todas as restrições impostas e produzem
+uma receita R(x,y) que depende do ponto escolhido. Porém, procura-se por aquele ponto
+que além de atender as restrições faz com que a receita por incineração, seja a máxima
+possível. Baseado, no que foi apresentado, os pontos que maximizam ou minimizam a
+função objetivo encontram-se nos vértices da região viável</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p>O único vértice da região viável é o ponto A e substituindo na função R(x,y)
+                                            verifica-se que o valor máximo de R(x,y) ocorre no mesmo. Neste ponto, a <b>
+    função R(x,
+    y) = R(120, 1440) = 0,4 . 120 + 0,7 . 1440 + 400 = 1456
+</b>, que é a receita máxima a qual
+                                            a empresa poderá obter, por incineração, respeitando as normas de proteção ao meio
+                                            ambiente.</p>
+                                        <p></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <button id="botao4" type="button" data-toggle="modal" data-target="#myModel" class="btn btn-success btn-lg btn-block">Continuar</button>
+                        </div>
+                        <div style="margin-top:40px" id="eq4" class="panel panel-primary">
+                            <div class="panel-heading">
+                                Conclusão
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p>
+                                            Assim pode-se concluir, com a utilização do método de Programação Linear
+                                            dentro das condições especificadas de não degradar o meio ambiente com emissão
+                                            excessiva de gases poluentes na atmosfera atendendo ao projeto do Milênio do ONU, as
+                                            diretrizes do CONAMA e fazendo um vínculo entre Matemática e Educação Ambiental
+                                            que a receita máxima por incineração desta empresa seria de<b> R$ 1456,00</b>, incinerando
+                                            <b>120 recipientes da empresa Silva e 1440 recipientes da empresa Souza</b> de uma só vez.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <button id="botao" type="button" class="btn btn-success btn-lg btn-block">Gerar</button>
+                        
+</div>
+                    
+                    
+</body>
+</html>

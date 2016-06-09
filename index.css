@@ -1,0 +1,120 @@
+html, 
+body, 
+.dx-viewport {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#home
+{
+    position: relative;
+    width: 100%;
+    padding: 200px 0px 180px;
+    background-color: transparent;
+    background-image: url("img/calculo.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+
+#home h1 {
+    padding-bottom: 30px;
+    font-family: "Lobster",cursive;
+    font-size: 60px;
+    line-height: 87px;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+
+#home h3, h4 {
+    position: relative;
+    font-family: "EB Garamond",serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+#home h3::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    height: 2px;
+    width: 20%;
+    margin-top: 0px;
+    background-color: #FFF;
+    background-image: none;
+    background-size: initial;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+
+#home h3::after {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    height: 2px;
+    width: 20%;
+    margin-top: 0px;
+    background-color: #FFF;
+    background-image: none;
+    background-size: initial;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+
+#home h2 {
+    padding-top: 500px;
+     padding-bottom: 100px;
+    font-family: "Lobster",sans-serif;
+    font-size: 60px;
+    line-height: 122px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 8px 7px 0px #000000;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 480px) {
+   #home h2 {
+    padding-top: 20px;
+    font-family: "Lobster",sans-serif;
+    font-size: 120px;
+    line-height: 122px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 8px 7px 0px #000000;
+    text-align: center;
+}
+
+#home h1 {
+    padding-bottom: 30px;
+    font-family: "Lobster",cursive;
+    font-size: 85px;
+    line-height: 87px;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+}
