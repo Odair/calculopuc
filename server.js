@@ -2,6 +2,6 @@ var http = require('http');
 var app = require('./config/express');
 
 http.createServer(app)
-.listen(3000, function() {
-	console.log('Servidor iniciado na porta 3000');
+.listen(80, function() {
+	console.log('Servidor iniciado na porta 80');
 });
